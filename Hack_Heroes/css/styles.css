@@ -1,0 +1,138 @@
+html, body
+{
+    height: 100%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mynerve', cursive;
+}
+.gradient
+{
+    /* background: rgb(28,18,182);
+    background: linear-gradient(90deg, rgba(28,18,182,1) 41%, rgba(28,98,244,1) 88%); */
+    background: rgb(14,8,115);
+    background: linear-gradient(90deg, rgba(14,8,115,1) 41%, rgba(5,18,46,1) 88%);
+}
+.page-header
+{
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.feature
+{
+    color: #fff;
+}
+.feature ul{
+    padding-left: 2rem;
+    list-style-type: none;
+}
+.feature ul li{
+    padding-left: 2rem;
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+.icon
+{
+    color: #fff;
+    height: 5rem;
+    width: 5rem;
+    font-size: 2rem;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery
+{
+    background-color: whitesmoke;
+}
+.gallery img
+{
+    border-radius: 5%;
+}
+.services
+{
+    color: #fff;
+}
+.services h1
+{
+    margin-bottom: 1.5rem;
+}
+footer
+{
+    color: #fff;
+    padding: 1rem;
+}
+a
+{
+    text-decoration: none;
+}
+.registrationBtn
+{
+    color: aliceblue; 
+    padding: 1rem 2rem; 
+    border-radius: 10px; 
+    font-size: 1.2rem;
+    background: rgb(28,18,182);
+    background: linear-gradient(90deg, rgba(28,18,182,1) 41%, rgba(28,98,244,1) 88%);
+    font-weight: 700;
+
+    transition: all 0.3s;
+}
+.registrationBtn:hover
+{
+    transform: translateY(-3px);
+    background: whitesmoke;
+    color: rgb(28,18,182);
+    color: linear-gradient(90deg, rgba(28,18,182,1) 41%, rgba(28,98,244,1) 88%);
+}
+
+/* Animacje */
+
+.revealY
+{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease-out;
+}
+.revealY.active
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.revealX
+{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 1.5s ease-in;
+}
+.revealX.transition-right
+{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+/* Animacja z lewej */
+
+.revealsXFromLeft
+{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 1.5s ease-in;
+}
+.revealsXFromLeft.transition-left
+{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+
+
